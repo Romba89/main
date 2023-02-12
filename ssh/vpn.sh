@@ -82,12 +82,12 @@ END
 
 sed -i $MYIP2 /etc/openvpn/tcp.ovpn;
 
-# Buat config client UDP 2200
+# Buat config client UDP 1194
 cat > /etc/openvpn/udp.ovpn <<-END
 client
 dev tun
 proto udp
-remote xxxxxxxxx 2200
+remote xxxxxxxxx 1194
 resolv-retry infinite
 route-method exe
 nobind
@@ -130,12 +130,12 @@ echo '</ca>' >> /etc/openvpn/tcp.ovpn
 # Copy config OpenVPN client ke home directory root agar mudah didownload ( TCP 1194 )
 cp /etc/openvpn/tcp.ovpn /home/vps/public_html/tcp.ovpn
 
-# masukkan certificatenya ke dalam config client UDP 2200
+# masukkan certificatenya ke dalam config client UDP 1194
 echo '<ca>' >> /etc/openvpn/udp.ovpn
 cat /etc/openvpn/server/ca.crt >> /etc/openvpn/udp.ovpn
 echo '</ca>' >> /etc/openvpn/udp.ovpn
 
-# Copy config OpenVPN client ke home directory root agar mudah didownload ( UDP 2200 )
+# Copy config OpenVPN client ke home directory root agar mudah didownload ( UDP 1194 )
 cp /etc/openvpn/udp.ovpn /home/vps/public_html/udp.ovpn
 
 # masukkan certificatenya ke dalam config client SSL
