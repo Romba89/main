@@ -43,13 +43,13 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
 # Service & Port
 
-• OpenSSH                 : 443, 22
+• OpenSSH                 : 22
 
 • OpenVPN                 : TCP 1194, UDP 2200, SSL 990
 
-• Stunnel5                : 443, 445, 777
+• Stunnel5                : 443
 
-• Dropbear                : 443, 109, 143
+• Dropbear                : 109, 143
 
 • Squid Proxy             : 3128, 8080
 
@@ -57,7 +57,7 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
 • Nginx                   : 89
 
-• Wireguard               : 7070
+• Wireguard               : 5353
 
 • L2TP/IPSEC VPN          : 1701
 
@@ -73,17 +73,17 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
 • XRAYS Vmess TLS         : 8443
 
-• XRAYS Vmess None TLS    : 80
+• XRAYS Vmess None TLS    : 8880
 
 • XRAYS Vless TLS         : 8443
 
-• XRAYS Vless None TLS    : 80
+• XRAYS Vless None TLS    : 8880
 
 • XRAYS Trojan            : 2083
 
 • Websocket TLS           : 443
 
-• Websocket None TLS      : 8880
+• Websocket None TLS      : 80
 
 • Websocket Ovpn          : 2086
 
