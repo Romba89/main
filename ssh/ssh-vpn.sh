@@ -433,7 +433,7 @@ wget -O addtrgo "https://${akbarvpnnn}/addtrgo.sh"
 wget -O deltrgo "https://${akbarvpnnn}/deltrgo.sh"
 wget -O renewtrgo "https://${akbarvpnnn}/renewtrgo.sh"
 wget -O cektrgo "https://${akbarvpnnn}/cektrgo.sh"
-wget -O portsshnontls "https://raw.githubusercontent.com/Romba89/main/main/websocket/ws-nontls.sh"
+wget -O portsshnontls "https://raw.githubusercontent.com/Romba89/main/main/websocket/portsshnontls.sh"
 wget -O portsshws "https://raw.githubusercontent.com/Romba89/main/main/websocket/portsshws.sh"
 
 wget -O sshovpnmenu "https://raw.githubusercontent.com/Romba89/main/main/update/sshovpn.sh"
